@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>874</width>
-    <height>933</height>
+    <width>1204</width>
+    <height>924</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,6 +37,12 @@
     </property>
     <item row="0" column="0">
      <widget class="QScrollArea" name="scrollArea">
+      <property name="font">
+       <font>
+        <family>Cascadia Code</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
@@ -45,8 +51,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1046</width>
-         <height>912</height>
+         <width>1390</width>
+         <height>865</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
@@ -65,717 +71,2655 @@
         <property name="spacing">
          <number>0</number>
         </property>
-        <item row="0" column="1">
+        <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget">
+          <property name="font">
+           <font>
+            <family>Cascadia Code</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
           <widget class="QWidget" name="tab">
            <attribute name="title">
             <string>Tab 1</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_5">
-            <item row="0" column="0">
-             <layout class="QVBoxLayout" name="verticalLayout_2">
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout">
-                  <item>
-                   <widget class="QLabel" name="label">
-                    <property name="text">
-                     <string>GPS</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="label_2">
-                    <property name="text">
-                     <string>Список</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="label_3">
-                    <property name="text">
-                     <string>Друге</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_2">
-                  <item>
-                   <spacer name="horizontalSpacer">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>35</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                  <item>
-                   <widget class="QSlider" name="horizontalSliderMode">
-                    <property name="maximum">
-                     <number>2</number>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="tickPosition">
-                     <enum>QSlider::TicksAbove</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <spacer name="horizontalSpacer_2">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>35</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <item>
-                 <widget class="QPushButton" name="pushButtonFillGPS">
-                  <property name="text">
-                   <string>Заповнити</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="comboBoxGPSList">
-                  <property name="minimumSize">
-                   <size>
-                    <width>250</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QGridLayout" name="gridLayout_4">
-                <item row="1" column="1">
-                 <widget class="QDoubleSpinBox" name="doubleSpinBoxLonL">
-                  <property name="minimum">
-                   <double>-180.000000000000000</double>
-                  </property>
-                  <property name="maximum">
-                   <double>180.000000000000000</double>
-                  </property>
-                  <property name="value">
-                   <double>24.000000000000000</double>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="2">
-                 <widget class="QDoubleSpinBox" name="doubleSpinBoxLatR">
-                  <property name="minimum">
-                   <double>-180.000000000000000</double>
-                  </property>
-                  <property name="maximum">
-                   <double>180.000000000000000</double>
-                  </property>
-                  <property name="value">
-                   <double>50.000000000000000</double>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="2">
-                 <widget class="QDoubleSpinBox" name="doubleSpinBoxLonR">
-                  <property name="minimum">
-                   <double>-180.000000000000000</double>
-                  </property>
-                  <property name="maximum">
-                   <double>180.000000000000000</double>
-                  </property>
-                  <property name="value">
-                   <double>26.000000000000000</double>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="1">
-                 <widget class="QDoubleSpinBox" name="doubleSpinBoxLatL">
-                  <property name="minimum">
-                   <double>-180.000000000000000</double>
-                  </property>
-                  <property name="maximum">
-                   <double>180.000000000000000</double>
-                  </property>
-                  <property name="value">
-                   <double>48.000000000000000</double>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QLabel" name="label_26">
-                  <property name="text">
-                   <string>Широта</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QLabel" name="label_27">
-                  <property name="text">
-                   <string>Довгота</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <widget class="QTextEdit" name="textEditGPS"/>
-              </item>
-             </layout>
-            </item>
-            <item row="0" column="1" rowspan="2">
-             <layout class="QGridLayout" name="gridLayout_3">
-              <property name="spacing">
-               <number>10</number>
+            <item row="0" column="0" rowspan="3">
+             <widget class="QFrame" name="frame_3">
+              <property name="font">
+               <font>
+                <family>Cascadia Code</family>
+                <pointsize>12</pointsize>
+               </font>
               </property>
-              <item row="19" column="1">
-               <widget class="QSpinBox" name="spinBoxAMPressL">
-                <property name="maximum">
-                 <number>100000000</number>
-                </property>
-                <property name="value">
-                 <number>1040000</number>
-                </property>
-               </widget>
-              </item>
-              <item row="9" column="0">
-               <widget class="QLabel" name="label_14">
-                <property name="text">
-                 <string>CH</string>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxSL">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="0" colspan="5">
-               <widget class="Line" name="line">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0">
-               <widget class="QLabel" name="label_7">
-                <property name="text">
-                 <string>Прилад</string>
-                </property>
-               </widget>
-              </item>
-              <item row="20" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAMDewR">
-                <property name="value">
-                 <double>6.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="16" column="2">
-               <widget class="QSpinBox" name="spinBoxAMDirR">
-                <property name="maximum">
-                 <number>360</number>
-                </property>
-                <property name="value">
-                 <number>300</number>
-                </property>
-               </widget>
-              </item>
-              <item row="15" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAMSpL"/>
-              </item>
-              <item row="4" column="4">
-               <widget class="QSpinBox" name="spinBoxSRError">
-                <property name="maximum">
-                 <number>255</number>
-                </property>
-                <property name="displayIntegerBase">
-                 <number>2</number>
-                </property>
-               </widget>
-              </item>
-              <item row="21" column="1">
-               <widget class="QSpinBox" name="spinBoxAMCompL">
-                <property name="maximum">
-                 <number>360</number>
-                </property>
-                <property name="value">
-                 <number>100</number>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="0">
-               <widget class="QLabel" name="label_10">
-                <property name="text">
-                 <string>HNO</string>
-                </property>
-               </widget>
-              </item>
-              <item row="17" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAMTempR">
-                <property name="value">
-                 <double>24.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="11" column="0" colspan="5">
-               <widget class="Line" name="line_2">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="2">
-               <widget class="QSpinBox" name="spinBoxSRPedCoef">
-                <property name="toolTip">
-                 <string>Коефіціент зменшення радіації через броню</string>
-                </property>
-                <property name="value">
-                 <number>90</number>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxSVPedL">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="2">
-               <widget class="QLabel" name="label_6">
-                <property name="text">
-                 <string>Права. гран.</string>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="2">
-               <widget class="QComboBox" name="comboBoxCPConc"/>
-              </item>
-              <item row="16" column="0">
-               <widget class="QLabel" name="label_19">
-                <property name="text">
-                 <string>Напрям</string>
-                </property>
-               </widget>
-              </item>
-              <item row="20" column="0">
-               <widget class="QLabel" name="label_22">
-                <property name="text">
-                 <string>Точка роси</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="1">
-               <widget class="QLabel" name="label_5">
-                <property name="text">
-                 <string>Лів. гран.</string>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="1">
-               <widget class="QComboBox" name="comboBoxCPEl"/>
-              </item>
-              <item row="10" column="1" colspan="2">
-               <widget class="QCheckBox" name="checkBoxBIO">
-                <property name="text">
-                 <string>Присутня</string>
-                </property>
-               </widget>
-              </item>
-              <item row="13" column="0" colspan="5">
-               <widget class="Line" name="line_3">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxSVPedR">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-                <property name="value">
-                 <double>0.290000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="18" column="1">
-               <widget class="QSpinBox" name="spinBoxAMHumL">
-                <property name="value">
-                 <number>50</number>
-                </property>
-               </widget>
-              </item>
-              <item row="16" column="1">
-               <widget class="QSpinBox" name="spinBoxAMDirL">
-                <property name="minimum">
-                 <number>0</number>
-                </property>
-                <property name="maximum">
-                 <number>360</number>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="0">
-               <widget class="QLabel" name="label_16">
-                <property name="text">
-                 <string>ChemProDM</string>
-                </property>
-               </widget>
-              </item>
-              <item row="10" column="0">
-               <widget class="QLabel" name="label_15">
-                <property name="text">
-                 <string>BIO</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="4">
-               <widget class="QSpinBox" name="spinBoxAP4Error">
-                <property name="maximum">
-                 <number>255</number>
-                </property>
-                <property name="displayIntegerBase">
-                 <number>2</number>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="0">
-               <widget class="QLabel" name="label_13">
-                <property name="text">
-                 <string>S</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxHNOR">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxHNOL">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="19" column="2">
-               <widget class="QSpinBox" name="spinBoxAMPressR">
-                <property name="maximum">
-                 <number>100000000</number>
-                </property>
-                <property name="value">
-                 <number>1080000</number>
-                </property>
-               </widget>
-              </item>
-              <item row="15" column="0">
-               <widget class="QLabel" name="label_18">
-                <property name="text">
-                 <string>Швидкість</string>
-                </property>
-               </widget>
-              </item>
-              <item row="14" column="4">
-               <widget class="QSpinBox" name="spinBoxAMError">
-                <property name="maximum">
-                 <number>255</number>
-                </property>
-                <property name="displayIntegerBase">
-                 <number>2</number>
-                </property>
-               </widget>
-              </item>
-              <item row="14" column="0">
-               <widget class="QLabel" name="label_17">
-                <property name="text">
-                 <string>AirMarWX220</string>
-                </property>
-               </widget>
-              </item>
-              <item row="20" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAMDewL">
-                <property name="value">
-                 <double>0.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="0">
-               <widget class="QLabel" name="label_4">
-                <property name="text">
-                 <string>СВНГ ПЕД</string>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxPL">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="15" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAMSpR">
-                <property name="value">
-                 <double>5.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="17" column="0">
-               <widget class="QLabel" name="label_20">
-                <property name="text">
-                 <string>Температура</string>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxSR">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxSRPedL">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="17" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAMTempL">
-                <property name="value">
-                 <double>18.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="18" column="2">
-               <widget class="QSpinBox" name="spinBoxAMHumR">
-                <property name="value">
-                 <number>70</number>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="4">
-               <widget class="QSpinBox" name="spinBoxSVError">
-                <property name="maximum">
-                 <number>255</number>
-                </property>
-                <property name="displayIntegerBase">
-                 <number>2</number>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="0">
-               <widget class="QLabel" name="label_11">
-                <property name="text">
-                 <string>P</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="4">
-               <widget class="QLabel" name="label_9">
-                <property name="text">
-                 <string>Помилки</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="0">
-               <widget class="QLabel" name="label_8">
-                <property name="text">
-                 <string>СРХБР ПЕД</string>
-                </property>
-               </widget>
-              </item>
-              <item row="21" column="0">
-               <widget class="QLabel" name="label_24">
-                <property name="text">
-                 <string>Компас</string>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="4">
-               <widget class="QSpinBox" name="spinBoxCPError">
-                <property name="maximum">
-                 <number>255</number>
-                </property>
-                <property name="displayIntegerBase">
-                 <number>2</number>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="0">
-               <widget class="QLabel" name="label_12">
-                <property name="text">
-                 <string>As</string>
-                </property>
-               </widget>
-              </item>
-              <item row="21" column="2">
-               <widget class="QSpinBox" name="spinBoxAMCompR">
-                <property name="maximum">
-                 <number>360</number>
-                </property>
-                <property name="value">
-                 <number>300</number>
-                </property>
-               </widget>
-              </item>
-              <item row="18" column="0">
-               <widget class="QLabel" name="label_23">
-                <property name="text">
-                 <string>Вологість</string>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAsR">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="19" column="0">
-               <widget class="QLabel" name="label_21">
-                <property name="text">
-                 <string>Тиск</string>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxAsL">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0" colspan="5">
-               <widget class="Line" name="line_4">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="2">
-               <widget class="QDoubleSpinBox" name="doubleSpinBoxPR">
-                <property name="maximum">
-                 <double>10000000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="3">
-               <widget class="QLabel" name="label_25">
-                <property name="text">
-                 <string>Поріг</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="3">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox">
-                <property name="maximum">
-                 <double>100000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="3">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
-                <property name="maximum">
-                 <double>100000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="3">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
-                <property name="maximum">
-                 <double>100000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="3">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
-                <property name="maximum">
-                 <double>100000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="3">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
-                <property name="maximum">
-                 <double>100000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="3">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
-                <property name="maximum">
-                 <double>100000.000000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="9" column="3">
-               <widget class="QSpinBox" name="spinBox_7"/>
-              </item>
-              <item row="9" column="1">
-               <widget class="QSpinBox" name="spinBoxCHL"/>
-              </item>
-              <item row="9" column="2">
-               <widget class="QSpinBox" name="spinBoxCHR"/>
-              </item>
-              <item row="12" column="3">
-               <widget class="QSpinBox" name="spinBox"/>
-              </item>
-             </layout>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <property name="spacing">
+                  <number>10</number>
+                 </property>
+                 <item row="16" column="0">
+                  <widget class="QLabel" name="label_19">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Напрям</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxWSp">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxPL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QLabel" name="label_14">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>CH</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRS">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="4">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxHNOTr">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>4.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="2">
+                  <widget class="QSpinBox" name="spinBoxAMHumL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="3">
+                  <widget class="QSpinBox" name="spinBoxAMCompR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <number>360</number>
+                   </property>
+                   <property name="value">
+                    <number>300</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="3">
+                  <widget class="QSpinBox" name="spinBoxAMDirR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <number>360</number>
+                   </property>
+                   <property name="value">
+                    <number>300</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QLabel" name="label_15">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>BIO</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="1">
+                  <widget class="QSpinBox" name="spinBoxPres">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <number>10000000</number>
+                   </property>
+                   <property name="value">
+                    <number>1040000</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_7">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Прилад</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLabel" name="label_6">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Права. гран.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>150.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QLabel" name="label_12">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>As</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRHNO">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRAs">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="0">
+                  <widget class="QLabel" name="label_18">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Швидкість</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="4">
+                  <widget class="QSpinBox" name="spinBoxCHTr">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <number>10</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRP">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAMSpL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="2">
+                  <widget class="QSpinBox" name="spinBoxAMDirL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="minimum">
+                    <number>0</number>
+                   </property>
+                   <property name="maximum">
+                    <number>360</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="3">
+                  <widget class="QSpinBox" name="spinBoxCHR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <number>9</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAMTempL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <double>18.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_4">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>СВНГ ПЕД</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="2">
+                  <widget class="QSpinBox" name="spinBoxCHL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRPedL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxPR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>4.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxHNOR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>4.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAsL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAMDewL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <double>0.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="0">
+                  <widget class="QLabel" name="label_21">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Тиск</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="1">
+                  <widget class="QSpinBox" name="spinBoxComp">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <number>360</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="label_11">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>P</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="1">
+                  <widget class="QSpinBox" name="spinBoxHum">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="value">
+                    <number>20</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxHNOL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="2">
+                  <widget class="QSpinBox" name="spinBoxAMPressL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <number>100000000</number>
+                   </property>
+                   <property name="value">
+                    <number>1040000</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="label_13">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>S</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSVFrontD">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1000000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="5">
+                  <widget class="Line" name="line_4">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAMTempR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <double>24.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="4">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxPTr">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>4.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="QLabel" name="label_25">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Поріг</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRPedR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="toolTip">
+                    <string>Коефіціент зменшення радіації через броню</string>
+                   </property>
+                   <property name="minimum">
+                    <double>0.290000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="4">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAsTr">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>4.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSVPedR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>0.290000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="1">
+                  <widget class="QCheckBox" name="checkBoxBIO">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Присутня</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0" colspan="5">
+                  <widget class="Line" name="line">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="0">
+                  <widget class="QLabel" name="label_20">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Температура</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="0" colspan="5">
+                  <widget class="Line" name="line_2">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="0">
+                  <widget class="QLabel" name="label_24">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Компас</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_8">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>СРХБР ПЕД</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAsR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>4.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAMSpR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <double>5.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_10">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>HNO</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="3">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxAMDewR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <double>6.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="3">
+                  <widget class="QSpinBox" name="spinBoxAMPressR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <number>100000000</number>
+                   </property>
+                   <property name="value">
+                    <number>1080000</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRD">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>1000000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>0.200000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="1">
+                  <widget class="QSpinBox" name="spinBoxSRCH">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <number>1000000</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="0">
+                  <widget class="QLabel" name="label_22">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Точка роси</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="3">
+                  <widget class="QSpinBox" name="spinBoxAMHumR">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="value">
+                    <number>70</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="4">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSTr">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>150.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxIDew">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="0" colspan="5">
+                  <widget class="Line" name="line_3">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="2">
+                  <widget class="QSpinBox" name="spinBoxAMCompL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <number>360</number>
+                   </property>
+                   <property name="value">
+                    <number>100</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="1">
+                  <widget class="QSpinBox" name="spinBoxDir">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="maximum">
+                    <number>360</number>
+                   </property>
+                   <property name="value">
+                    <number>180</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="0">
+                  <widget class="QLabel" name="label_17">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>AirMarWX220</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSVPedL">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>10000000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="0">
+                  <widget class="QLabel" name="label_16">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>ChemProDM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="4">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSVTr">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>5.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="1">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxTemp">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="accelerated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showGroupSeparator" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="0">
+                  <widget class="QLabel" name="label_23">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Вологість</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QLabel" name="label_5">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Лів. гран.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="4">
+                  <widget class="QDoubleSpinBox" name="doubleSpinBoxSRATOM">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>125.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="1">
+                  <widget class="QComboBox" name="comboBoxCPEl">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>TIC</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Blood</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Nerve</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Blister</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="12" column="2">
+                  <widget class="QComboBox" name="comboBoxCPConc">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>не визначена</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>низька</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>середня</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>висока</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="12" column="3">
+                  <widget class="QComboBox" name="comboBoxCPTr">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>не визначена</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>низька</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>середня</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>висока</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="12" column="4">
+                  <widget class="QSpinBox" name="spinBoxCPEC"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
             </item>
-            <item row="1" column="0">
-             <widget class="QListWidget" name="listWidget"/>
+            <item row="0" column="1">
+             <widget class="QFrame" name="frame">
+              <property name="font">
+               <font>
+                <family>Cascadia Code</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                     <item>
+                      <widget class="QPushButton" name="pushButton">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Cascadia Code</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="toolTip">
+                        <string>Режим прийому реальних GPS координат, імітація на повноціній машині</string>
+                       </property>
+                       <property name="text">
+                        <string>GPS координати</string>
+                       </property>
+                       <property name="checkable">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QPushButton" name="pushButtonFillGPS">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Заповнити</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxGPSList">
+                     <property name="minimumSize">
+                      <size>
+                       <width>250</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxMovement">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>Рух</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout_4">
+                   <item row="1" column="1">
+                    <widget class="QDoubleSpinBox" name="doubleSpinBoxLonL">
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="minimum">
+                      <double>-180.000000000000000</double>
+                     </property>
+                     <property name="maximum">
+                      <double>180.000000000000000</double>
+                     </property>
+                     <property name="value">
+                      <double>24.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QDoubleSpinBox" name="doubleSpinBoxLatR">
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="minimum">
+                      <double>-180.000000000000000</double>
+                     </property>
+                     <property name="maximum">
+                      <double>180.000000000000000</double>
+                     </property>
+                     <property name="value">
+                      <double>50.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QDoubleSpinBox" name="doubleSpinBoxLonR">
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="minimum">
+                      <double>-180.000000000000000</double>
+                     </property>
+                     <property name="maximum">
+                      <double>180.000000000000000</double>
+                     </property>
+                     <property name="value">
+                      <double>26.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QDoubleSpinBox" name="doubleSpinBoxLatL">
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="minimum">
+                      <double>-180.000000000000000</double>
+                     </property>
+                     <property name="maximum">
+                      <double>180.000000000000000</double>
+                     </property>
+                     <property name="value">
+                      <double>48.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_26">
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Широта</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_27">
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Довгота</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="textEditGPS">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="contextMenuPolicy">
+                    <enum>Qt::CustomContextMenu</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QFrame" name="frame_4">
+              <property name="font">
+               <font>
+                <family>Cascadia Code</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="0" column="1">
+                  <widget class="QSpinBox" name="spinBoxStep">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="pushButtonScenarioStop">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Стоп</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="pushButtonStartScenario">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Пуск</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_29">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Крок</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QPushButton" name="pushButtonSend">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Надіслати</string>
+                   </property>
+                   <property name="shortcut">
+                    <string>F1</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QPushButton" name="pushButtonGenerateRandom">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Рандом</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QFrame" name="frame_2">
+              <property name="font">
+               <font>
+                <family>Cascadia Code</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <property name="horizontalSpacing">
+                  <number>10</number>
+                 </property>
+                 <property name="verticalSpacing">
+                  <number>20</number>
+                 </property>
+                 <item row="7" column="2" colspan="2">
+                  <widget class="QComboBox" name="comboBoxAMEL">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>COM Порт не відкрився</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Прилад не відповідає</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Контрольна сума не співпала WIMWV</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Контрольна сума не співпала WIMDA</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Контрольна сума не співпала GPVTG</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="6" column="2" colspan="2">
+                  <widget class="QLabel" name="label_9">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>AirMarWX220</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="4">
+                  <widget class="QLabel" name="label_28">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Несправності</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2" colspan="2">
+                  <widget class="QComboBox" name="comboBoxSREL">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>COM Порт не відкрився</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Помилка запису у COM порт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Контрольна сума не співпала</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Прилад СРХБР не відповідає</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Прилад AP4C не відповідає</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="5" column="2" colspan="2">
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRHSF">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Відмова ВЧ детектора</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRLSF">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Відмова НЧ детектора</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRDI">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Валідність вимірювань</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRNM">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Потребує обслуговування</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRLB">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Низький заряд батареї</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRLC">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Втрата зв'язку</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSR9B">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="toolTip">
+                      <string>9 байт</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSR2B">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="toolTip">
+                      <string>2 бит 10 байта</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="3" column="0" colspan="2">
+                  <widget class="QComboBox" name="comboBoxSVEL">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Втрата зв'язку з детекторами</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Порт не відкрився</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Помилка запису у COM порт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Контрольна сума не співпала</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Помилка розміру прийнятого пакету</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Прилад не відповідає</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="7" column="0" colspan="2">
+                  <widget class="QComboBox" name="comboBoxCPEL">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ChemPro завис</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ChemPro АЦП завис</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ChemPro апаратна помилка</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>COM Порт не відкрився</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Помилка запису у COM port</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Контрольна сума не співпала</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Прилад не відповідає</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="4">
+                  <widget class="Line" name="line_5">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <layout class="QHBoxLayout" name="SRHBRRedy">
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRLH">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Низький H2</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRHT">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="toolTip">
+                      <string>Нагрів</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRRD">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="toolTip">
+                      <string>Готовий</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSRER">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="toolTip">
+                      <string>Помилка AP4C</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QLabel" name="label_2">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>СРХБР-Т</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxCPDI">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Валідність вимірювань</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxCPDE">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Відсутні дані у пакеті</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="label_3">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>ChemProDM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <layout class="QHBoxLayout" name="SVNGErrors">
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSVHSF">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Відмова ВЧ детектора</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSVLSF">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Відмова НЧ детектора</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSVDI">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Валідність вимірювань</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="checkBoxSVLC">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Cascadia Code</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
+                     <property name="toolTip">
+                      <string>Втрата зв'язку</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>СВНГ-Т</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
             </item>
            </layout>
           </widget>
           <widget class="QWidget" name="tab_2">
            <attribute name="title">
             <string>Tab 2</string>
+           </attribute>
+           <widget class="QListWidget" name="listWidgetActiveDanger">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>190</y>
+              <width>271</width>
+              <height>321</height>
+             </rect>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::AllEditTriggers</set>
+            </property>
+            <property name="dragEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::DropOnly</enum>
+            </property>
+            <property name="defaultDropAction">
+             <enum>Qt::MoveAction</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="sortingEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QListWidget" name="listWidgetArchiveDanger">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>190</y>
+              <width>311</width>
+              <height>321</height>
+             </rect>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::AllEditTriggers</set>
+            </property>
+            <property name="dragEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::DragDrop</enum>
+            </property>
+            <property name="defaultDropAction">
+             <enum>Qt::MoveAction</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="viewMode">
+             <enum>QListView::ListMode</enum>
+            </property>
+            <property name="sortingEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButtonRefteshList">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>150</y>
+              <width>80</width>
+              <height>24</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Оновити</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Страница</string>
            </attribute>
           </widget>
          </widget>
@@ -791,7 +2735,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>874</width>
+     <width>1204</width>
      <height>21</height>
     </rect>
    </property>

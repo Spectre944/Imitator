@@ -13,6 +13,7 @@ SOURCES += \
     imitator.cpp
 
 HEADERS += \
+    coord_work.h \
     imitator.h
 
 FORMS += \
